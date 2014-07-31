@@ -3,13 +3,11 @@
     <h3>Select Event Type</h3>
     <div class="form-group">
       <select class="form-control" id="selectEvent"
-              ng-model="selectedEventType"
-              ng-options="obj.name for obj in eventTypes">
+        ng-model="selectedEventType"
+        ng-options="obj.name for obj in eventTypes">
       </select>
       <form name="ngform" sf-model="modelData" sf-form="form" sf-schema="schema" sf-decorator="{{decorator}}">
       </form>
     </div>
-   
-
   </div>
 </div>

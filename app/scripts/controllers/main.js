@@ -11,11 +11,11 @@ angular.module('pocAngularFormsApp')
   .controller('MainCtrl', function ($scope, $http) {
 
 		$scope.eventTypes = [
-		    { name: "Comedy Event", data: '/scripts/formdata/comedy.json' },
-		    { name: "Childrens Event", data: '/scripts/formdata/childrens.json' },
-		    { name: "Educational Event", data: '/scripts/formdata/educational.json' },
-		    { name: "Music Event", data: '/scripts/formdata/music.json' }
-	  ];
+	    { name: "Comedy Event", data: '/scripts/formdata/comedy.json' },
+	    { name: "Childrens Event", data: '/scripts/formdata/childrens.json' },
+	    { name: "Educational Event", data: '/scripts/formdata/educational.json' },
+	    { name: "Music Event", data: '/scripts/formdata/music.json' }
+  	];
 
 	  $scope.selectedEventType = $scope.eventTypes[0];
 
@@ -29,6 +29,7 @@ angular.module('pocAngularFormsApp')
 	      });
 	    }
 	  });
+
 	  $scope.decorator = 'bootstrap-decorator';
 
 });
