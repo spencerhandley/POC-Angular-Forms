@@ -1,0 +1,56 @@
+{
+  "schema": {
+    "type": "object",
+    "title": "Comment",
+    "properties": {
+      "name":  {
+        "title": "Educational Event Name",
+        "type": "string"
+      },
+      "description":  {
+        "title": "Event Description",
+        "type": "string",
+        "description": "Describe your comedy event."
+      },
+      "school": {
+        "title": "School",
+        "type": "string"
+      },
+      "performer": {
+        "title": "Performer",
+        "type": "string"
+      },
+      "startDate": {
+        "title": "Event Date",
+        "type": "string"
+      },
+      "time": {
+        "title": "Event Time",
+        "type": "string"
+      },
+      "comment": {
+        "title": "Comment",
+        "type": "string",
+        "maxLength": 20,
+        "validationMessage": "Don't be greedy!"
+      }
+    },
+    "required": ["name","email","comment"]
+  },
+  "form": [
+    "name",
+    "description",
+    "performer",
+    "school",
+    "startDate",
+    "time",
+    {
+      "key": "comment",
+      "type": "textarea"
+    },
+    {
+      "type": "submit",
+      "title": "OK"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": {
+    "type": "object",
+    "title": "Comment",
+    "properties": {
+      "name":  {
+        "title": "Childrens Event Name",
+        "type": "string"
+      },
+      "description":  {
+        "title": "Event Description",
+        "type": "string",
+        "description": "Describe your Childrens event."
+      },
+      "performers": {
+        "title": "Performers",
+        "type": "string"
+      },
+      "startDate": {
+        "title": "Start Date",
+        "type": "string"
+      },
+      "endDate": {
+        "title": "End Date",
+        "type": "string"
+      },
+      "comment": {
+        "title": "Comment",
+        "type": "string",
+        "maxLength": 20,
+        "validationMessage": "Don't be greedy!"
+      }
+    },
+    "required": ["name","email","comment"]
+  },
+  "form": [
+    "name",
+    "description",
+    "performers",
+
+    "startDate",
+    "endDate",
+    {
+      "key": "comment",
+      "type": "textarea"
+    },
+    {
+      "type": "submit",
+      "title": "OK"
+    }
+  ]
+}
